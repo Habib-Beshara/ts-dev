@@ -1,0 +1,20 @@
+{
+  "name": "generator-ts-dev",
+  "version": "1.0.0",
+  "description": "A yeoman generator for bootstrapping a typescript env with lint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "author": "Habib Beshara",
+  "license": "ISC"
+}

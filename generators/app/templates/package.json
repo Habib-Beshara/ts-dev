@@ -1,0 +1,40 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "author": "<%= author %>",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config ./build/index.js",
+    "dev": "nodemon -r dotenv/config ./build/index.js",
+    "build": "tsc --watch",
+    "lint": "eslint \"src/**\" --fix",
+    "test": "jest --watch --coverage --collectCoverageFrom='src/**/**.ts'",
+    "test:debug": "jest --runInBand --detectOpenHandles"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "config": {
+    "mongodbMemoryServer": {
+      "debug": "0",
+      "version": "4.2.3"
+    }
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/faker": "^4.1.12",
+    "@types/jest": "^26.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "faker": "^4.1.0",
+    "jest": "^26.1.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^3.9.5"
+  }
+}
